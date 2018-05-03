@@ -31,5 +31,10 @@ public class PetClinicApplication {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(PetClinicApplication.class, args);
     }
+    @Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		
+		return super.configure(builder);
+}
 
 }
